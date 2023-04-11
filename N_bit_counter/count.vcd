@@ -1,0 +1,198 @@
+$date
+	Thu Mar 02 12:29:36 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb $end
+$var wire 4 ! count [3:0] $end
+$var reg 1 " clk $end
+$var reg 4 # data [3:0] $end
+$var reg 1 $ load $end
+$var reg 1 % reset $end
+$var reg 1 & up_d $end
+$scope module c1 $end
+$var wire 1 " clk $end
+$var wire 4 ' data [3:0] $end
+$var wire 1 $ load $end
+$var wire 1 % reset $end
+$var wire 1 & up_d $end
+$var reg 4 ( count [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx (
+bx '
+x&
+1%
+x$
+bx #
+0"
+bx !
+$end
+#1
+b1111 !
+b1111 (
+1"
+#2
+0"
+0%
+#3
+b1110 !
+b1110 (
+1"
+#4
+0"
+b10 #
+b10 '
+#5
+b1 !
+b1 (
+1"
+1$
+#6
+0"
+0$
+#7
+b0 !
+b0 (
+1"
+#8
+0"
+1&
+#9
+b1 !
+b1 (
+1"
+#10
+0"
+#11
+b10 !
+b10 (
+1"
+#12
+0"
+#13
+b11 !
+b11 (
+1"
+#14
+0"
+#15
+b100 !
+b100 (
+1"
+#16
+0"
+#17
+b101 !
+b101 (
+1"
+#18
+0"
+#19
+b110 !
+b110 (
+1"
+#20
+0"
+#21
+b111 !
+b111 (
+1"
+#22
+0"
+#23
+b1000 !
+b1000 (
+1"
+#24
+0"
+#25
+b1001 !
+b1001 (
+1"
+#26
+0"
+#27
+b1010 !
+b1010 (
+1"
+#28
+0"
+0&
+#29
+b1001 !
+b1001 (
+1"
+#30
+0"
+#31
+b1000 !
+b1000 (
+1"
+#32
+0"
+#33
+b111 !
+b111 (
+1"
+#34
+0"
+#35
+b110 !
+b110 (
+1"
+#36
+0"
+#37
+b101 !
+b101 (
+1"
+#38
+0"
+#39
+b100 !
+b100 (
+1"
+#40
+0"
+#41
+b11 !
+b11 (
+1"
+#42
+0"
+#43
+b10 !
+b10 (
+1"
+#44
+0"
+#45
+b1 !
+b1 (
+1"
+#46
+0"
+#47
+b0 !
+b0 (
+1"
+#48
+0"
+#49
+b1111 !
+b1111 (
+1"
+#50
+0"
+#51

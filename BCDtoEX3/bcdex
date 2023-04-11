@@ -1,0 +1,60 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\Users\DELL\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\Users\DELL\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\Users\DELL\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\Users\DELL\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\Users\DELL\iverilog\lib\ivl\va_math.vpi";
+S_000001d428d8a9a0 .scope module, "tb" "tb" 2 7;
+ .timescale 0 0;
+v000001d428e59980_0 .var "a1", 7 0;
+v000001d428e59a20_0 .net "b1", 7 0, L_000001d428ea1ee0;  1 drivers
+S_000001d428e153e0 .scope module, "g" "bcd_ex3" 2 10, 2 1 0, S_000001d428d8a9a0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 8 "a";
+    .port_info 1 /OUTPUT 8 "b";
+v000001d428d8ab30_0 .net *"_ivl_1", 3 0, L_000001d428e59ac0;  1 drivers
+v000001d428d869d0_0 .net *"_ivl_10", 3 0, L_000001d428ea2160;  1 drivers
+L_000001d428e59b68 .functor BUFT 1, C4<0011>, C4<0>, C4<0>, C4<0>;
+v000001d428e15570_0 .net/2u *"_ivl_2", 3 0, L_000001d428e59b68;  1 drivers
+v000001d428e15610_0 .net *"_ivl_4", 3 0, L_000001d428d8b710;  1 drivers
+v000001d428e156b0_0 .net *"_ivl_7", 3 0, L_000001d428d8b7b0;  1 drivers
+L_000001d428e59bb0 .functor BUFT 1, C4<0011>, C4<0>, C4<0>, C4<0>;
+v000001d428e15750_0 .net/2u *"_ivl_8", 3 0, L_000001d428e59bb0;  1 drivers
+v000001d428e59840_0 .net "a", 7 0, v000001d428e59980_0;  1 drivers
+v000001d428e598e0_0 .net "b", 7 0, L_000001d428ea1ee0;  alias, 1 drivers
+L_000001d428e59ac0 .part v000001d428e59980_0, 4, 4;
+L_000001d428d8b710 .arith/sum 4, L_000001d428e59ac0, L_000001d428e59b68;
+L_000001d428d8b7b0 .part v000001d428e59980_0, 0, 4;
+L_000001d428ea2160 .arith/sum 4, L_000001d428d8b7b0, L_000001d428e59bb0;
+L_000001d428ea1ee0 .concat [ 4 4 0 0], L_000001d428ea2160, L_000001d428d8b710;
+    .scope S_000001d428d8a9a0;
+T_0 ;
+    %vpi_call 2 12 "$monitor", $time, " a = %b %b b = %b %b ", &PV<v000001d428e59980_0, 4, 4>, &PV<v000001d428e59980_0, 0, 4>, &PV<v000001d428e59a20_0, 4, 4>, &PV<v000001d428e59a20_0, 0, 4> {0 0 0};
+    %delay 5, 0;
+    %pushi/vec4 80, 0, 8;
+    %store/vec4 v000001d428e59980_0, 0, 8;
+    %delay 5, 0;
+    %pushi/vec4 41, 0, 8;
+    %store/vec4 v000001d428e59980_0, 0, 8;
+    %delay 5, 0;
+    %pushi/vec4 82, 0, 8;
+    %store/vec4 v000001d428e59980_0, 0, 8;
+    %delay 5, 0;
+    %pushi/vec4 51, 0, 8;
+    %store/vec4 v000001d428e59980_0, 0, 8;
+    %delay 5, 0;
+    %pushi/vec4 116, 0, 8;
+    %store/vec4 v000001d428e59980_0, 0, 8;
+    %delay 5, 0;
+    %pushi/vec4 5, 0, 8;
+    %store/vec4 v000001d428e59980_0, 0, 8;
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "bcdex.v";
